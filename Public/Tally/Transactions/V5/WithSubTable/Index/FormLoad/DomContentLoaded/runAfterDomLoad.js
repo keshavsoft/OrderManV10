@@ -1,6 +1,6 @@
 import { hookAllListeners } from "./AddListeners/start.js";
 import { formSearchParamsFunc } from "./formSearchParamsFunc.js";
-import { initTable, initVertical } from "../../../../../../../KSTableAi/V26/entry.js";
+import { initTable, initVertical } from "../../../../../../../KSTableAi/V27/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
@@ -22,7 +22,7 @@ const buildUi = async () => {
         endPoints: {
             create: "/Api/V9/BillsTable/Insert",
             update: "",
-            delete: "/Api/V9/BillsTable/Delete",
+            delete: "/Api/V2/BillsTable/Delete",
             find: "/Api/V1/BillsTable/find"
         },
         options: {
@@ -80,7 +80,7 @@ const buildUi = async () => {
         endPoints: {
             create: "/Api/V1/ItemsTable/Insert",
             update: "",
-            delete: "/Api/V9/BillsTable/Delete",
+            delete: "/Api/V2/ItemsTable/Delete",
             read: "/Api/V1/ItemsTable/FilterColumns",
             find: "/Api/V1/BillsTable/find",
             dataListEndpoints: {
@@ -117,7 +117,7 @@ const buildUi = async () => {
             {
                 columnName: "ItemName", isRequired: true,
                 tableFooterDataListShow: true, dataListSource: "ItemName.StockItemName",
-                allowOnChange: true, defaultValue: "Coke-Mts-5%"
+                allowOnChange: true
             },
             {
                 columnName: "Rate", isRequired: true,

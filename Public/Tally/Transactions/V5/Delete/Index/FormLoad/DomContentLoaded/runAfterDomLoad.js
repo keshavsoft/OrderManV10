@@ -1,6 +1,6 @@
 import { startFetchAsGet } from "./FetchAsDelete/start.js";
 
-import { initTableOnly } from "../../../../../../../KSTableAi/V24/entry.js";
+import { initTableOnly } from "../../../../../../../KSTableAi/V25/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
@@ -18,8 +18,8 @@ const buildUi = async () => {
         endPoints: {
             create: "/Api/V9/ItemsTable/Insert",
             update: "",
-            delete: "/Api/V9/BillsTable/Delete",
-            read: "/Api/V6/BillsTable/ShowAll",
+            delete: "/Api/V2/BillsTable/Delete",
+            read: "/Api/V2/BillsTable/ShowAll",
             find: "/Api/V9/BillsTable/find",
             dataListEndpoints: {
             }
