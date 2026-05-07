@@ -1,6 +1,6 @@
 import { startFetchAsGet } from "./FetchAsDelete/start.js";
 
-import { initTableOnly } from "../../../../../../../KSTableAi/V25/entry.js";
+import { initTableOnly } from "../../../../../../../KSTableAi/V28/entry.js";
 
 const runAfterDomLoad = () => {
     buildUi().then();
