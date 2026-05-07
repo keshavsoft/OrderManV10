@@ -73,11 +73,13 @@ const buildUi = async () => {
                 onDelete: async ({ toDeletePk }) => {
                     const fromDelete = await startFetchAsGet({
                         inQuery: {
-                            ParentPk: toDeletePk
+                            ParentPk: toDeletePk.toString()
                         }
                     });
 
-                    return await fromDelete;
+                    if (fromDelete.status === 200) {
+                        return await { ok: true };
+                    };
                 }
             }
         }
