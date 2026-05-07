@@ -1,6 +1,6 @@
 // /UI/mountTableUI.js
 
-import { initRender } from "../BuildTableOnlyWithVersions/V4/initRender.js";
+import { initRender } from "../BuildTableOnlyWithVersions/V5/initRender.js";
 import { buildFullUI } from "./compose/buildFullUI.js";
 
 export const mountTableOnlyUI = ({
