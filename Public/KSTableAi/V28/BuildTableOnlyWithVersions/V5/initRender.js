@@ -3,7 +3,7 @@ import { renderDataLists } from "./InitFuncs/renderDataLists.js";
 import { renderSearchRow } from "./InitFuncs/renderSearchRow.js";
 import { renderTable } from "./InitFuncs/renderTable.js";
 import { hookDomListeners } from "./InitFuncs/hookDomListeners.js";
-import { buildDeleteHandler } from "./handlerFuncs/V4/buildDeleteHandler.js";
+import { buildDeleteHandler } from "./handlerFuncs/V6/buildDeleteHandler.js";
 
 const initRender = ({ inContainerEl, inDataStore, inDom, inServices, inOptions, inEndPoints,
     inColumnsConfig, inUiClasses, callbacks, inConfig, inToSaveRow }) => {
